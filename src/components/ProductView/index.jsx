@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState,useContext, useEffect } from 'react';
 import {
   useParams
 } from "react-router-dom";
@@ -17,7 +17,7 @@ function ProductView() {
   salePrice
 
   } = productsList.find(el => el.productId == slug);
-
+ 
   return (
     <div className='ProductView-wrapper' >
       <div className='productImage'>

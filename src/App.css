@@ -218,3 +218,9 @@ button.addnewbtn {
     cursor: pointer;
     text-transform: uppercase;
 }
+.views {
+    text-align: left;
+    margin-top: 20px;
+    color: grey;
+    font-weight: 500;
+}

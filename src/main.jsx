@@ -14,29 +14,34 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-localStorage.setItem('products',JSON.stringify(products));
+if (localStorage.getItem('products') === null) {
+  const updateProductData = products.map(el => { return { ...el, views: 0 } })
+  localStorage.setItem('products', JSON.stringify(updateProductData));
+}
+
+
 ReactDOM.render(
   <React.StrictMode>
     <AuthProvider>
       <Router>
-       <Layout>
-        <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route exact path="/">
-            <App />
-          </Route>
-           <Route path="/product/:slug">
-            <ProductView />
-          </Route>
-           <Route path="/seller/:slug">
-            <SellerView />
-          </Route>
-           <Route path="/addNewProduct">
-            <AddNewProduct />
-          </Route>
-        </Switch>
+        <Layout>
+          <Switch>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/">
+              <App />
+            </Route>
+            <Route path="/product/:slug">
+              <ProductView />
+            </Route>
+            <Route path="/seller/:slug">
+              <SellerView />
+            </Route>
+            <Route path="/addNewProduct">
+              <AddNewProduct />
+            </Route>
+          </Switch>
         </Layout>
       </Router>
     </AuthProvider>
