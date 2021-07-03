@@ -1,0 +1,220 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  
+}
+.filterBar{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 50px;
+
+
+}
+.filter-wrapper{
+  width: 30%
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+
+}
+.search-wrapper{
+  width: 70%;
+
+}
+
+select#short {
+    padding: 12px;
+    font-size: 16px;
+}
+label[for=short]{
+    color: grey;
+    font-size: 16px;
+    padding-rigt:8px;
+}
+.search-input{
+ width: 75%;
+    padding: 8px;
+    font-size: 21px;
+    margin-left: 25%;
+}
+ul>li{
+  list-style: none;
+  padding: 8px;
+  cursor: pointer;
+  color: grey;
+
+}
+.catergory-wrapper {
+    width: 20%;
+    
+}
+.productList-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  width: 80%;
+}
+
+.product-wrapper{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  
+  padding: 30px;
+}
+.product-img{
+  width: 300px;
+  height: 270px;
+  margin-bottom: 40px;
+
+}
+.product-wrapper__name{
+  text-align: left;
+  margin-bottom: 20px;
+}
+.product-wrapper__priceBar{
+  display: flex;
+  justify-content: space-between;
+}
+.product-wrapper__price{
+  text-decoration: line-through;
+  font-weight: 500px
+}
+.product-wrapper__salePrice{
+  color:red;
+  font-weight: 500px
+}
+.product-wrapper__stock{
+  color: green
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 99px;
+}
+select#login {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 31px;
+
+}
+form.login-form {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 14px;
+    justify-content: space-evenly;
+}
+
+.login-label{
+  font-size: 22px;
+  text-align: center;
+}
+button.login-btn {
+    padding: 15px;
+    color: white;
+    background: #171515;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logout{
+  cursor: pointer;
+}
+.ProductView-wrapper{
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-around;
+  margin-top: 60px;
+  height: 100vh;
+}
+.product-info-wrapper{
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: start;
+  text-align: left;
+}
+.productName{
+  padding-bottom: 30px;
+  border-bottom:1px solid #ccc; 
+}
+.productImage{
+  width: 40%;
+
+}
+.price {
+    display: flex;
+    padding: 36px 0;
+}
+.price-1{
+  font-weight: bold;
+  text-decoration: line-through;
+  margin-right: 20px;
+}
+.price-2{
+  font-weight: bold;
+  color:red;
+  
+  
+}
+.stock-unit {
+    color: green;
+}
+.SellerView-wrapper {
+    padding: 0 50px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top:50px;
+}
+.seller-form{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+.seller-form > input {
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px;
+}
+input.product-checkbox {
+    font-size: 18px;
+    margin-right: 19px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+input[type="checkbox"]{
+  width: 30px; 
+  height: 30px; 
+}
+.product_stock {
+    display: flex;
+    text-align: center;
+    
+}
+button.addnewbtn {
+    padding: 12px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 190px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
