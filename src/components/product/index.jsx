@@ -24,11 +24,11 @@ function Product({
 
 
   const navigate = () => {
-    if (user === 'buyer') {
+    if (user === 'seller') {
+      history.push(`/seller/${productId}`)
+    } else {
       history.push(`/product/${productId}`);
       updateViewNumber(productId);
-    } else {
-      history.push(`/seller/${productId}`)
     }
 
   }
